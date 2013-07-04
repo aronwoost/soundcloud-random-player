@@ -28,7 +28,7 @@
       if(accessToken == "null") {
         info.textContent = "There was a problem with the authentication.";
       } else {
-        sessionStorage.setItem("auth", JSON.stringify({accessToken:accessToken}));
+        localStorage.setItem("sc-random-player:auth", JSON.stringify({accessToken:accessToken}));
         if(location.href.indexOf("aronwoost.github.io") !== -1) {
           window.location = "/soundcloud-random-player";
         } else {

@@ -28,7 +28,7 @@ require(
 
     var appModel = new AppModel(),
       appView = new AppView({model:appModel}),
-      auth = JSON.parse(sessionStorage.getItem("auth"));
+      auth = JSON.parse(localStorage.getItem("sc-random-player:auth"));
 
     if(auth) {
       $.ajaxSetup({
