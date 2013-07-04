@@ -22,7 +22,7 @@ define([
         evt.preventDefault();
 
         var clientId = "a0c9a45ed8a411e057c6e06e20125b28",
-          redirectUri = "http://testapp.dev/auth.html",
+          redirectUri = "http://aronwoost.github.io/soundcloud-random-player/auth.html",
           reqUrl = "https://api.soundcloud.com/connect?scope=non-expiring&redirect_uri="+redirectUri+"&response_type=token&client_id="+clientId;
 
         window.location = reqUrl;
