@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+ 
+  <title></title>
+
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+ 
+  <style type="text/css">
+    .container {
+      width:500px;
+      margin:0px auto;
+    }
+
+    .btns {
+      width:230px;
+      padding-bottom:10px;
+      margin:0px auto;
+    }
+
+    .btn {
+      width:230px;
+    }
+
+    .btn-sc {
+      color: #FFFFFF;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      background-color: #d05300;
+      *background-color: #d05300;
+      background-image: -moz-linear-gradient(top, #FB8112, #d05300);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FB8112), to(#d05300));
+      background-image: -webkit-linear-gradient(top, #FB8112, #d05300);
+      background-image: -o-linear-gradient(top, #FB8112, #d05300);
+      background-image: linear-gradient(to bottom, #FB8112, #d05300);
+      background-repeat: repeat-x;
+      border-color: #d05300;
+      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FB8112', endColorstr='#d05300', GradientType=0);
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    }
+    .btn-sc:hover,
+    .btn-sc:active,
+    .btn-sc.active,
+    .btn-sc.disabled,
+    .btn-sc[disabled] {
+      color: #FFFFFF;
+      background-color: #d05300;
+      *background-color: #003bb3;
+    }
+
+  </style>
+ 
+</head>
+ 
+<body>
+
+  <div class="container">
+    <div>
+      <h3>SoundCloud Random Player</h3>
+      <p>
+        Sometimes at work I just want to listen to random music. Nice random music. From SoundCloud. This App plays random tracks from users you follow or tracks you fav'ed. That's it.
+      </p>
+      <div class="btns">
+        <a href="#" class="btn btn-sc" id="auth" disabled="disabled">Connecting with <strong>SoundCloud</strong> ...</a>
+        <a href="#" class="btn btn-sc" id="next" style="display:none;">Next track</a>
+      </div>
+    </div>
+    <div id="player"></div>
+  </div>
+
+  <script data-main="/js/config" src="/js/vendor/require-2.1.6.js"></script>
+</body>
+ 
+</html>
